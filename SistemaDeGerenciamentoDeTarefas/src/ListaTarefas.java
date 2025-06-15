@@ -25,9 +25,9 @@ public class ListaTarefas {
     }
 
     public boolean marcarComoConcluida(String descricao){
-        for(Tarefa tarefa : tarefas){
-            if(tarefa.getDescricao().equals(descricao)){
-                tarefa.setConcluida(true);
+        for(Tarefa lista : tarefas){
+            if(lista.getDescricao().equals(descricao)){
+                lista.setConcluida(true);
                 return true;
             }
         }
@@ -47,9 +47,9 @@ public class ListaTarefas {
 
    public List<Tarefa> listarPorPrioridadeEPendentes() {
         List<Tarefa> listaFiltrada = new ArrayList<>();
-        for (Tarefa tarefa : tarefas) {
-            if (!tarefa.isConcluida()) {
-                listaFiltrada.add(tarefa);
+        for (Tarefa lista : tarefas) {
+            if (!lista.isConcluida()) {
+                listaFiltrada.add(lista);
             }
         }
 

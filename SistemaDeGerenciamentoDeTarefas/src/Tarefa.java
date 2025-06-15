@@ -1,17 +1,17 @@
 import java.util.Objects;
 
 public class Tarefa {
-    private String descricao;
-    private int prioridade;
-    private boolean concluida;
+    private String descricao; //atributo descricao
+    private int prioridade; //atributo prioridade
+    private boolean concluida; //atributo booleano
 
     public Tarefa(String descricao, int prioridade){
         this.descricao = descricao;
-        if(prioridade < 1 || prioridade> 5){
+        if(prioridade < 1 || prioridade> 5){ //coloquei uma inicialização sobre o atributo
             throw new IllegalArgumentException("Prioridade deve ser entre 1 e 5.");
         }
         this.prioridade= prioridade;
-        this.concluida = false;
+        this.concluida = false; //inicializa como falso
     }
 
     public String getDescricao(){
