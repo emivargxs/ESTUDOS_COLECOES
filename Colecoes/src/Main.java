@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Biblioteca biblioteca = new Biblioteca();
+        Biblioteca2 biblioteca = new Biblioteca2();
 
         // Adicionando livros
         Livro livro1 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", "123", 1954);
